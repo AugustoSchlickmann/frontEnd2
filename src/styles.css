@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:coral;
+
+}
+
+label{
+  font-weight: bold;
+}
+.container{
+  width: 1170;
+  margin: 0 auto;
+}
+
+.col.id{
+width: 50px;
+text-align: left;
+}
+
+.col.id.header{
+width: 50px;
+}
+
+.col.acoes{
+text-align: center;
+}
