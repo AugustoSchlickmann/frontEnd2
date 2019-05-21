@@ -10,7 +10,7 @@
       </h1>
     </div>
     <div class="ui-g-12 ui-fluid">
-        <label>Descrição</label>
+        <label>Filtro</label>
         <input pInputText type="text" name="descricao"  [(ngModel)]="nomeBusca">
     </div>
     <div class="ui-g-12">
@@ -45,9 +45,14 @@
           </p-table>
       </div>
 
-      <div class="ui-g-12">
-        <a pButton label="Nova Categoria" routerLink="/categorias/novo"></a>
-      </div>
+
 
   </div>
 </div>
+
+
+<style>
+    div.ui-g-12{
+      text-align: center;
+    }
+    </style>

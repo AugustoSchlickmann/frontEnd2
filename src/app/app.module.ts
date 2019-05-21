@@ -23,6 +23,7 @@ import {ConfirmDialogModule} from 'primeng/confirmdialog';
 
 
 
+
 const rotas: Routes = [
   {path: 'categorias', component: CategoriasPesquisaComponent},
   {path: 'categorias/novo', component: CategoriasCadastroComponent},
@@ -34,7 +35,7 @@ const rotas: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

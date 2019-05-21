@@ -9,7 +9,7 @@
             </div>
 
             <div class="ui-g-12 ui-md-9 ui-fluid">
-              <label>Descrição</label>
+              <label>Nome da Categoria</label>
               <input pInputText type="text" name="nome"
                 [(ngModel)]="categoria.nome"
                 #nome="ngModel" required minlength="3">
@@ -20,7 +20,7 @@
 
             <div class="ui-g-12">
                 <button pButton type="submit" label="Salvar" [disabled]="f.invalid" class=" boxButton"></button>
-                <button pButton type="button" label="Novo" class="ui-button-info" class=" boxButton" routerLink="/categorias/novo"></button>
+
                 <a routerLink="/categorias">Voltar para a pesquisa</a>
             </div>
 
