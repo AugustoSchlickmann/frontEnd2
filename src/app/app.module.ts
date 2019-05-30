@@ -1,3 +1,7 @@
+import { CidadesModule } from './cidades/cidades.module';
+import { ProdutosModule } from './produtos/produtos.module';
+import { ProdutosCadastroComponent } from './produtos/produtos-cadastro/produtos-cadastro.component';
+import { CidadesCadastroComponent } from './cidades/cidades-cadastro/cidades-cadastro.component';
 import { EstadosPesquisaComponent } from './estados/estados-pesquisa/estados-pesquisa.component';
 import { EstadosCadastroComponent } from './estados/estados-cadastro/estados-cadastro.component';
 import { CategoriasCadastroComponent } from './categorias/categorias-cadastro/categorias-cadastro.component';
@@ -20,7 +24,7 @@ import {TooltipModule} from 'primeng/tooltip';
 import {TableModule} from 'primeng/table';
 import { FormsModule } from '@angular/forms';
 import {ConfirmDialogModule} from 'primeng/confirmdialog';
-
+import {SidebarModule} from 'primeng/sidebar';
 
 
 
@@ -30,7 +34,10 @@ const rotas: Routes = [
   {path: 'categorias/:id', component: CategoriasCadastroComponent},
   {path: 'estados', component: EstadosPesquisaComponent},
   {path: 'estados/novo', component: EstadosCadastroComponent},
-  {path: 'estados/:id', component: EstadosCadastroComponent}
+  {path: 'estados/:id', component: EstadosCadastroComponent},
+  {path: 'cidades', component: CidadesCadastroComponent},
+  {path: 'produtos/novo', component: ProdutosCadastroComponent},
+  //{path: '' , redirectTo:'categorias' ,pathMatch:'full'},
 ];
 
 @NgModule({
@@ -51,6 +58,10 @@ const rotas: Routes = [
     FormsModule,
     ConfirmDialogModule,
     RouterModule,
+    SidebarModule,
+    ProdutosModule,
+    CidadesModule,
+
 
   ],
   providers: [

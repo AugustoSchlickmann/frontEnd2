@@ -5,11 +5,36 @@
 
 
 
-  <button pButton type="button" label="Visualizar Categorias" class="ui-button-info" class=" boxButton" routerLink="/categorias"></button>
+<!-- <button pButton type="button" label="Visualizar Categorias" class="ui-button-info" class=" boxButton" routerLink="/categorias"></button>
   <button pButton type="button" label="Cadastrar Categorias" class="ui-button-info" class=" boxButton" routerLink="/categorias/novo"></button>
   <button pButton type="button" label="Visualizar Estados" class="ui-button-info" class=" boxButton" routerLink="/estados"></button>
   <button pButton type="button" label="Cadastrar Estados" class="ui-button-info" class=" boxButton" routerLink="/estados/novo"></button>
+-->
+  <p-sidebar [(visible)]="sideBar">
 
+    <div class=" ui-g-12 ui-fluid">
+      <h1 class="boxButton">Menu</h1>
+      <button pButton type="button" (click) ="sideBar = false" label = "Categorias"
+      routerLink="/categorias" class="boxButton"></button>
 
+      <button pButton type="button" (click) ="sideBar = false" label = "Cadastrar Categorias"
+      routerLink="/categorias/novo" class="boxButton"></button>
+
+      <button pButton type="button" (click) ="sideBar = false" label = "Estados"
+      routerLink="/estados" class="boxButton"></button>
+
+      <button pButton type="button" (click) ="sideBar = false" label = "Cadastrar Estados"
+      routerLink="/estados/novo" class="boxButton"></button>
+
+      <button pButton type="button" (click) ="sideBar = false" label = "Cidades"
+      routerLink="/cidades" class="boxButton"></button>
+
+      <button pButton type="button" (click) ="sideBar = false" label = "Cadastrar Produtos"
+      routerLink="/produtos/novo" class="boxButton"></button>
+    </div>
+
+  </p-sidebar>
+
+    <button pButton type="button" (click)="sideBar = true" icon="pi pi-th-large"></button>
 
   <router-outlet></router-outlet>
